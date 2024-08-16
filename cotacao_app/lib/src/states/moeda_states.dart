@@ -13,6 +13,15 @@ class MoedaStates {
     required this.result,
   });
 
+  factory MoedaStates.init() {
+    return MoedaStates(
+        moedas: const [],
+        moedaIn: MoedaModel.init(),
+        moedaOut: MoedaModel.init(),
+        result: '0',
+        );
+  }
+
   MoedaStates copyWith({
     List<MoedaModel>? moedas,
     MoedaModel? moedaIn,
