@@ -5,7 +5,7 @@ import 'package:cotacao_app/src/models/moeda_model.dart';
 class MoedaStore extends ValueNotifier<MoedaStates> {
   MoedaStore() : super(MoedaStates.init());
 
-  Future<void> getMoadas() async {}
+  Future<void> getMoedas() async {}
   Future<void> converter() async {}
 
   Future<void> selecionarMoedasIn(MoedaModel model) async {
